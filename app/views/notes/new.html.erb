@@ -1,0 +1,17 @@
+<h1>New Note</h1>
+<%= form_for @note do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+
+    <%= f.label :body %>
+    <%= f.text_field :body %>
+
+    <%= f.label :category %>
+    <%= f.text_field :category %>
+
+    <%= f.submit %>
+<% end %>
+
