@@ -3,8 +3,8 @@
 <h2><%= note.title %></h2>
   <%= link_to 'Show Note', note_path(note.id) %>
   <p><%= link_to 'New Note', new_note_path(note.id) %></p>
-  <%= link_to 'Edit page', edit_path_note(note.id)%>
-  <%= link_to 'Destroy page', note method: :delete%>
+  <%= link_to 'Edit page', edit_note_path(note.id) %>
+  <%= link_to 'Destroy page', note, method: :delete %>
 <% end %>
 
 
